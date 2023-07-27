@@ -1,0 +1,55 @@
+.table-box {
+  height: 240px;
+  width: 800px;
+  margin: 0 auto;
+  // background-color: #040c19;
+  background: url("@/assets/imgs/bg2.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  .t-table,
+  th.el-table__column,
+  .t-table tr {
+    background: none;
+  }
+  .t-table td.el-table__column,
+  .t-table td.el-table__expanded-cell,
+  .t-table th.is-leaf {
+    border: none;
+  }
+  .t-table {
+    color: #fff;
+    &::before {
+      background-color: #033050;
+    }
+    th.el-table__column,
+    .el-table__empty-text {
+      color: #fff;
+    }
+    .t-header {
+      background: rgba(26, 62, 111, 0.6) !important;
+    }
+    .el-table__column-drag i {
+      background: linear-gradient(
+        180deg,
+        rgba(238, 238, 238, 0.09) 0%,
+        rgba(189, 189, 189, 0.86) 52%,
+        rgba(216, 216, 216, 0.09) 100%
+      );
+    }
+    .sort-caret.ascending {
+      border-bottom-color: #fff;
+    }
+    .sort-caret.descending {
+      border-top-color: #fff;
+    }
+    .ascending .sort-caret.ascending {
+      border-bottom-color: #1890ff;
+    }
+    .descending .sort-caret.descending {
+      border-top-color: #1890ff;
+    }
+    .row-odd {
+      background: rgba(14, 38, 71, 0.6);
+    }
+  }
+}
