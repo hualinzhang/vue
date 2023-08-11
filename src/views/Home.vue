@@ -41,4 +41,9 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
+.app-body {
+  // background:radial-gradient(red,yellow,pink)
+  // background:linear-gradient(#FF0000,#FFF200, #1E9600);
+  background:#1E1E1E;
+}
 </style>

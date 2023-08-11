@@ -1,44 +1,49 @@
 <!--
  * @Author: 871423948@qq.com
- * @Date: 2023-07-26 14:43:10
+ * @Date: 2023-08-08 16:09:15
  * @LastEditors: 871423948@qq.com
- * @LastEditTime: 2023-08-10 14:30:09
- * @Description: 侧边栏
+ * @LastEditTime: 2023-08-08 16:26:09
+ * @Description: 导航菜单子组件
 -->
 <template>
-  <div class="aside">
-    <el-menu
-      :default-active="$route.path"
-      class="el-menu-vertical-demo"
-      background-color="#545c64"
-      active-background-color="#434a50"
-      text-color="#fff"
-      active-text-color="#ffd04b"
-    >
-      <MenuTree v-for="item in menuArr" :key="item.path" :menuData="item" />
-    </el-menu>
+  <div>
+    <el-submenu v-if="menuData.children && menuData.children.length" :index="menuData.path">
+      <template slot="title">
+        <i :class="menuData.icon"></i>
+        <span>{{ menuData.name }}</span>
+      </template>
+      <MenuTree v-for="item in menuData.children" :key="item.path" :menuData="item" />
+    </el-submenu>
+    <el-menu-item v-else :index="menuData.path">
+      <template slot="title">
+        <i :class="menuData.icon"></i>
+        <span>{{ menuData.name }}</span>
+      </template>
+    </el-menu-item>
   </div>
 </template>
 
 <script>
-import { menuList } from "@/permission/menuList";
-import MenuTree from "@/components/MenuTree";
 // 这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 export default {
-  name: "VAside",
+  name: "MenuTree",
   // 引入组件
-  components: { MenuTree },
-  props: {},
+  components: {},
+  props: {
+    menuData: {
+      type: Object,
+      default() {
+        return {};
+      },
+      require: true,
+    },
+  },
   data() {
     // 这里存放数据
     return {};
   },
   // 监听属性 类似于data概念
-  computed: {
-    menuArr() {
-      return menuList;
-    },
-  },
+  computed: {},
   // 监控data中的数据变化
   watch: {},
   // 生命周期 - 创建完成（可以访问当前this实例）
@@ -56,8 +61,4 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
-.aside {
-  width:300px;
-  background-color:#545c64;
-}
 </style>

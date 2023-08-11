@@ -2,11 +2,11 @@
  * @Author: 871423948@qq.com
  * @Date: 2023-07-26 14:39:29
  * @LastEditors: 871423948@qq.com
- * @LastEditTime: 2023-07-27 16:42:52
+ * @LastEditTime: 2023-08-10 14:21:14
  * @Description: 头部
 -->
 <template>
-  <div class="">头</div>
+  <div class="header">头</div>
   <!-- <ui-header
     :system="system"
     :default-active="active"
@@ -170,4 +170,10 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
+.header {
+  height: 60px;
+  line-height: 60px;
+  background-color: #3C3C3C;
+  color: #fff;
+}
 </style>
