@@ -2,42 +2,32 @@
  * @Author: 871423948@qq.com
  * @Date: 2023-08-08 15:48:52
  * @LastEditors: 871423948@qq.com
- * @LastEditTime: 2023-08-10 10:41:23
+ * @LastEditTime: 2023-08-17 15:51:01
  * @Description: 菜单列表
  */
 export const menuList = [
   {
     name: "Table 表格",
-    path: "/table",
-    icon: "el-icon-setting",
+    path: "/Table",
+    icon: "icon-biaoge",
     children: [
       {
         name: "表格滚动",
-        path: "/table/tableAutoScroll",
-        icon: "el-icon-setting",
+        path: "/Table/TableAutoScroll",
+        icon: "el-icon-folder",
         children: [
           {
-            name: "自定义实现",
-            path: "/table/tableAutoScroll/111",
-            icon: "el-icon-setting",
+            name: "vue-seamless-scroll依赖实现",
+            path: "/Table/TableAutoScroll/ScrollSeamless",
+            icon: "el-icon-file",
           },
           {
-            name: "vue-seamless-scroll依赖实现",
-            path: "/table/tableAutoScroll/222",
-            icon: "el-icon-setting",
+            name: "自定义实现",
+            path: "/Table/TableAutoScroll/ScrollSelf",
+            icon: "el-icon-file",
           }
         ],
       }
-      // {
-      //   name: "自定义表格滚动",
-      //   path: "/table/tableAutoScroll",
-      //   icon: "el-icon-setting",
-      // },
-      // {
-      //   name: "vue-seamless-scroll实现表格滚动",
-      //   path: "/table/tableAutoScroll2",
-      //   icon: "el-icon-setting",
-      // }
     ],
   },
   {

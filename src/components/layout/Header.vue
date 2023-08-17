@@ -2,11 +2,13 @@
  * @Author: 871423948@qq.com
  * @Date: 2023-07-26 14:39:29
  * @LastEditors: 871423948@qq.com
- * @LastEditTime: 2023-08-10 14:21:14
+ * @LastEditTime: 2023-08-17 14:56:55
  * @Description: 头部
 -->
 <template>
-  <div class="header">头</div>
+  <div class="header">
+    <h1>vue项目</h1>
+  </div>
   <!-- <ui-header
     :system="system"
     :default-active="active"

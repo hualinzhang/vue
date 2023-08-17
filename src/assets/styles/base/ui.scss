@@ -1,0 +1,46 @@
+// ui公共样式定义
+
+// 常用margin
+@for $i from 0 through 6 {
+  .ui-m#{$i*5} {
+    margin: $i * 5 + px !important;
+  }
+  .ui-mt#{$i*5} {
+    margin-top: $i * 5 + px !important;
+  }
+  .ui-mb#{$i*5} {
+    margin-bottom: $i * 5 + px !important;
+  }
+  .ui-mr#{$i*5} {
+    margin-right: $i * 5 + px !important;
+  }
+  .ui-ml#{$i*5} {
+    margin-left: $i * 5 + px !important;
+  }
+}
+
+// 常用padding
+@for $i from 0 through 6 {
+  .ui-p#{$i*5} {
+    padding: $i * 5 + px !important;
+  }
+  .ui-pt#{$i*5} {
+    padding-top: $i * 5 + px !important;
+  }
+  .ui-pb#{$i*5} {
+    padding-bottom: $i * 5 + px !important;
+  }
+  .ui-pr#{$i*5} {
+    padding-right: $i * 5 + px !important;
+  }
+  .ui-pl#{$i*5} {
+    padding-left: $i * 5 + px !important;
+  }
+}
+
+// 字体大小
+@for $i from 6 through 20 {
+  .ui-f#{$i*2} {
+    font-size: $i * 2 + px !important;
+  }
+}

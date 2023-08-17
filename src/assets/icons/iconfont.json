@@ -1,0 +1,58 @@
+{
+  "id": "4214552",
+  "name": "vue",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "vue2的练手项目",
+  "glyphs": [
+    {
+      "icon_id": "1057386",
+      "name": "柱状图",
+      "font_class": "zhuzhuangtu",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "1092117",
+      "name": "饼图",
+      "font_class": "bingtu",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1305461",
+      "name": "表格",
+      "font_class": "biaoge",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "3638341",
+      "name": "系统拓扑图",
+      "font_class": "xitongtuoputu",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "4354248",
+      "name": "图表-折线图",
+      "font_class": "tubiao-zhexiantu",
+      "unicode": "eb96",
+      "unicode_decimal": 60310
+    },
+    {
+      "icon_id": "8017493",
+      "name": "echartstat",
+      "font_class": "echartstat",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "22761417",
+      "name": "水波图",
+      "font_class": "shuibotu",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    }
+  ]
+}
